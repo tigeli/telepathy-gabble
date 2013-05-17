@@ -1,0 +1,3 @@
+[submodule "telepathy-gabble"]
+	path = telepathy-gabble
+	url = http://anongit.freedesktop.org/git/telepathy/telepathy-gabble.git
