@@ -1,0 +1,89 @@
+* Sun Apr 28 2013 John Brooks <john.brooks@jollamobile.com> - 0.17.3
+- Update to 0.17.3
+- Add 0.17.3-fix-fdo-61792.patch adapted from master to fix a build failure
+- Add 0001-Disable-parallel-build-for-extensions-directory.patch to fix occasional build failures
+
+* Tue Apr  8 2013 Reto Zingg <reto.zingg@jollamobile.com> - 0.17.1
+- add -tests package for automated testing
+
+* Thu Oct 04 2012 Marko Saukko <marko.saukko@jollamobile.com> - 0.17.1
+- Update to 0.17.1, require telepathy-filesystem and telepathy-mission-control
+
+* Mon Aug 06 2012 Marko Saukko <marko.saukko@jollamobile.com> - 0.16.1
+- Update to version 0.16.1
+
+* Wed May 09 2012 Maurice de la Ferté <Maurice.Ferte@basyskom.com> - 0.15.1
+- Add needed BuildRequires and remove configure option to get a connection to
+  e.g. a jabber server established. This prevents for following error:
+  (dbus-monitor output): "WOCKY_TLS_CERT_SIGNER_UNKNOWN ..."
+
+* Thu Dec 01 2011 Marko Saukko <marko.saukko@cybercom.com> - 0.15.1
+- Updated to version 0.15.1
+
+* Fri Jul 29 2011 Zheng Wu <wu.zheng@intel.com> - 0.13.3
+- Update to upstream 0.13.3 (BMC#22073)
+
+* Thu Jun 16 2011 Gustavo Pichorim Boiko <gustavo.boiko@collabora.co.uk> - 0.12.2
+- Update to 0.12.2 to fix GTalk calls (BMC#19026)
+
+* Tue Apr 26 2011 Alban Crequy <alban.crequy@collabora.co.uk> - 0.12.0
+- Update to upstream 0.12.0 for BMC#9615
+- Remove patch from the .yaml file. It was already removed from the .spec
+  since 0.11.6 for BMC#13306 but yaml and spec were out of sync
+
+* Tue Mar 22 2011 wu zheng <wu.zheng@intel.com> - 0.11.8
+- Update to upstream 0.11.8
+
+* Mon Mar 14 2011 Huaxu Wan <huaxu.wan@intel.com> - 0.11.7
+- Update to upstream 0.11.7, Fix BMC#13872
+
+* Tue Feb 08 2011 Siraj Razick <siraj.razick@collabora.co.uk> - 0.11.6
+- Update to upstream 0.11.6 (BMC#13306)
+- Removes the patch to build without CA certificates
+
+* Thu Dec 2 2010 Senko Rasic <senko.rasic@collabora.co.uk> - 0.11.3
+- Update to upstream 0.11.3 (BMC#10827)
+- Remove mail status polling patch, included in upstream
+- Add patch fixing build when system cacert location is not provided
+
+* Mon Nov 22 2010 Senko Rasic <senko.rasic@collabora.co.uk> - 0.10.4
+- Update to upstream 0.10.4 (BMC#10300)
+  + Add HTTP proxy support
+  + Make Wocky more tolerant/graceful in error conditions
+  + Invisibility support
+- Remove dependancy on loudmouth since it's not used anymore
+- Requires telepathy-glib 0.11.16 or newer
+
+* Mon Nov 08 2010 Rob Bradford <rob@linux.intel.com> - 0.9.15
+- Include patch to workaround server mail notification issues (BMC#8980)
+
+* Thu Jul 29 2010 Huaxu Wan <huaxu.wan@linux.intel.com> - 0.9.15
+- Update to 0.9.15
+
+* Tue Mar 16 2010 Rob Bradford <rob@linux.intel.com> - 0.9.7
+- Update to latest release (needed for Myzone IM mail notification)
+
+* Mon Feb 22 2010 Anas Nashif <anas.nashif@intel.com> - 0.8.8
+- Update with spectacle
+
+* Wed Dec 02 2009 Jian-feng Ding <jian-feng.ding@intel.com> 0.8.8
+- Upgrade to latest, several bugs fixed
+
+* Sun Oct 11 2009 Rob Bradford <rob@linux.intel.com> 0.8.6
+- Update to fix crashers
+
+* Wed Sep 30 2009 Rob Bradford <rob@linux.intel.com> 0.8.3
+- Update to 0.8.3 to fix MC5/tp-glib issues
+
+* Wed Aug 26 2009 Jian-feng Ding <jian-feng.ding@intel.com> 0.8.1
+- Upgrade to 0.8.1, dropped unused patch
+
+* Sat May 23 2009 Arjan van de Ven <arjan@linux.intel.com> 0.7.24
+- Fix build with as-needed
+
+* Thu Apr 02 2009 Ding Jian-feng <jian-feng.ding@intel.com> 0.7.24
+- Upgrade to 0.7.24
+
+* Tue Feb 10 2009 Damien Lespiau <damien.lespiau@intel.com> 0.7.20
+- Initial import into moblin
+

@@ -1,0 +1,12 @@
+diff -Naur telepathy-gabble-0.17.1/configure.ac telepathy-gabble-0.17.1-tests/configure.ac
+--- telepathy-gabble-0.17.1/configure.ac	2012-09-11 13:51:59.000000000 +0000
++++ telepathy-gabble-0.17.1-tests/configure.ac	2013-04-08 07:26:00.009864418 +0000
+@@ -184,7 +184,7 @@
+ fi
+ AM_CONDITIONAL([ENABLE_INSTALLED_TESTS], [test "x$installed_tests" = xyes])
+ 
+-gabbletestsdir=${libdir}/telepathy-gabble-tests
++gabbletestsdir=/opt/tests/telepathy-gabble
+ AC_SUBST(gabbletestsdir)
+ 
+ AC_ARG_ENABLE([is-a-phone],
