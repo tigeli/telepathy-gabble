@@ -55,6 +55,7 @@ Requires:   %{name} = %{version}-%{release}
 Requires:   python-twisted
 Requires:   pyOpenSSL
 Requires:   dbus-python
+Requires:   pygobject2
 
 %description tests
 The %{name}-tests package contains tests and
