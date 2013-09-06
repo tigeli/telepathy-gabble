@@ -9,7 +9,7 @@ Name:       telepathy-gabble
 # << macros
 
 Summary:    A Jabber/XMPP connection manager
-Version:    0.17.3
+Version:    0.18.1
 Release:    1
 Group:      Applications/Communications
 License:    LGPLv2+ and BSD
@@ -28,12 +28,12 @@ BuildRequires:  pkgconfig(nice) >= 0.0.11
 BuildRequires:  pkgconfig(uuid)
 BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(dbus-glib-1) >= 0.82
-BuildRequires:  pkgconfig(telepathy-glib) >= 0.19.7
-BuildRequires:  pkgconfig(glib-2.0) >= 2.30
-BuildRequires:  pkgconfig(gobject-2.0) >= 2.30
-BuildRequires:  pkgconfig(gthread-2.0) >= 2.30
-BuildRequires:  pkgconfig(gio-2.0) >= 2.30
-BuildRequires:  pkgconfig(gmodule-2.0) >= 2.30
+BuildRequires:  pkgconfig(telepathy-glib) >= 0.19.9
+BuildRequires:  pkgconfig(glib-2.0) >= 2.32
+BuildRequires:  pkgconfig(gobject-2.0) >= 2.32
+BuildRequires:  pkgconfig(gthread-2.0) >= 2.32
+BuildRequires:  pkgconfig(gio-2.0) >= 2.32
+BuildRequires:  pkgconfig(gmodule-2.0) >= 2.32
 BuildRequires:  pkgconfig(libxslt)
 BuildRequires:  pkgconfig(libsoup-2.4)
 BuildRequires:  pkgconfig(libidn)
@@ -116,7 +116,6 @@ install -m 0644 tests/README $RPM_BUILD_ROOT/opt/tests/telepathy-gabble/README
 %files
 %defattr(-,root,root,-)
 # >> files
-%doc COPYING AUTHORS
 %doc %{_datadir}/doc/%{name}/*.html
 %{_libexecdir}/%{name}
 %{_bindir}/telepathy-gabble-xmpp-console
