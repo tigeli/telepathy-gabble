@@ -38,6 +38,7 @@ BuildRequires:  pkgconfig(libxslt)
 BuildRequires:  pkgconfig(libsoup-2.4)
 BuildRequires:  pkgconfig(libidn)
 BuildRequires:  pkgconfig(gnutls)
+BuildRequires:  pkgconfig(libiphb)
 BuildRequires:  python
 BuildRequires:  ca-certificates
 BuildRequires:  python-twisted
