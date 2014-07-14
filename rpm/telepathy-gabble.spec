@@ -88,7 +88,8 @@ cd ../../..
 # << build pre
 
 %reconfigure --disable-static \
-    --enable-installed-tests
+    --enable-installed-tests \
+    --with-ca-certificates=/etc/pki/tls/certs/
 
 make %{?jobs:-j%jobs}
 
